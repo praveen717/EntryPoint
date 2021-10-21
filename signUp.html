@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style1.css">
+    <title>login</title>
+</head>
+<body>
+   <div class="hero">
+       <div class="form-box">
+           <div class ="button-box">
+           <div id="btn"></div>
+           <a href="/login.html">
+            <button type="button" on click="/login.html" class="toggle-btn" onclick="login()" >Log In</button> 
+        </a>
+        <button type="button" class="toggle-btn">Sign Up</button>
+        
+           </div>
+           <div class="social-icon">
+               <img src="fb.png" alt="network problem">
+               <img src="tw.png" alt="network problem">
+               <img src="gp.png" alt="network problem">
+           </div>
+           <form action="/signUp" method="POST">
+            <form id="signUp" class="input-group">
+                <input type="text" class=input-field placeholder="Name" required name="name">
+                <input type="tel" class=input-field placeholder=" Phone Number" required name="phone">
+                <input type="email" class=input-field placeholder="email-id" required name="phone">
+                <input type="text" class="input-field" placeholder="Enter Password" required name="password">
+                <input type="text" class="input-field" placeholder="confirm password" required name="confirmPassword">
+                
+                <input type="checkbox" class="check-box"><span>REMEMBER PASSWORD</span>
+                <button class="submit-btn">Log In</button>
+            </form>
+        </form>
+       </div>
+   </div> 
+   <script>
+    var z=document.getElementById("btn");
+    function login(){
+        z.style.left="0";
+    }
+   
+
+</script>
+</body>
+</html>
